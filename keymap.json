@@ -1,0 +1,21 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-;": "terminal_panel::Toggle",
+      "ctrl-ñ": "terminal_panel::Toggle",
+      "super-l": "agent::ToggleFocus",
+      "ctrl-l": "agent::ToggleFocus",
+      "ctrl-shift-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-;": "terminal_panel::Toggle",
+      "ctrl-ñ": "terminal_panel::Toggle",
+      "super-l": "agent::ToggleFocus",
+      "ctrl-l": "agent::ToggleFocus"
+    }
+  }
+]

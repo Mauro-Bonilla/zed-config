@@ -1,0 +1,116 @@
+{
+  "cli_default_open_behavior": "existing_window",
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  "cursor_blink": false,
+  "autosave": "on_focus_change",
+  "theme": { "mode": "dark", "light": "Tokyo Night Yellow", "dark": "Resonance with Hatsune Miku" },
+  "icon_theme": { "mode": "dark", "light": "Zed (Default)", "dark": "Zed (Default)" },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_fallbacks": ["FiraCode Nerd Font", "Menlo", "monospace"],
+  "project_panel": { "dock": "left", "default_width": 280, "file_icons": true, "git_status": true },
+  "git_panel": { "dock": "left", "tree_view": true, "show_count_badge": true, "default_width": 300 },
+  "diff_view_style": "split",
+  "indent_guides": { "show": "always", "show_active_guide": true },
+  "features": { "edit_prediction_provider": "none" },
+  "terminal": {
+    "dock": "bottom",
+    "default_height": 300,
+    "copy_on_select": true,
+    "font_family": "Hack Nerd Font Mono",
+    "font_size": 15,
+    "line_height": 1.08,
+    "cursor_shape": "beam",
+    "cursor_blink": true,
+    "toolbar": { "breadcrumbs": true, "title": true },
+    "working_directory": "current_project_directory",
+    "alternate_scroll": "auto"
+  },
+  "window": {
+    "background_opacity": 0.65
+  },
+  "agent": {
+    "sandbox_permissions": {
+      "allow_unsandboxed": true,
+      "network_hosts": [
+        "github.com",
+        "api.github.com"
+      ]
+    },
+    "dock": "right",
+    "button": true,
+    "default_model": { "effort": "low",
+                       "enable_thinking": true,
+                       "provider": "openrouter", "model": "z-ai/glm-5.3-flash" },
+    "inline_alternatives": []
+  },
+  "language_models": {
+    "openrouter": {
+      "available_models": [
+        {
+          "name": "deepseek/deepseek-v4.1-flash",
+          "display_name": "DeepSeek V4.1 Flash",
+          "max_tokens": 163840,
+          "max_output_tokens": 32768
+        },
+        {
+          "name": "z-ai/glm-5.3-flash",
+          "display_name": "GLM 5.3 Flash",
+          "max_tokens": 200000,
+          "max_output_tokens": 32000
+        },
+        {
+          "name": "moonshotai/kimi-k3",
+          "display_name": "Kimi K3",
+          "max_tokens": 262144,
+          "max_output_tokens": 32768
+        }
+      ]
+    }
+  },
+  "auto_install_extensions": {
+    "basedpyright": true,
+    "ruff": true,
+    "python-refactoring": true,
+    "python-requirements": true,
+    "typescript-snippets": true,
+    "react-typescript-snippets": true,
+    "go-snippets": true,
+    "golangci-lint": true,
+    "neocmake": true,
+    "emmet": true,
+    "toml": true,
+    "dockerfile": true,
+    "editorconfig": true
+  },
+  "languages": {
+    "C": { "language_servers": ["clangd"], "format_on_save": "on", "formatter": "language_server", "tab_size": 4 },
+    "C++": { "language_servers": ["clangd"], "format_on_save": "on", "formatter": "language_server", "tab_size": 4 },
+    "Python": {
+      "language_servers": ["basedpyright", "ruff", "..."],
+      "format_on_save": "on",
+      "formatter": { "language_server": { "name": "ruff" } },
+      "tab_size": 4
+    },
+    "Go": { "language_servers": ["gopls", "..."], "format_on_save": "on", "formatter": "language_server", "tab_size": 4 },
+    "TypeScript": { "language_servers": ["vtsls", "..."], "format_on_save": "on", "formatter": "prettier", "tab_size": 2 },
+    "TSX": { "language_servers": ["vtsls", "..."], "format_on_save": "on", "formatter": "prettier", "tab_size": 2 },
+    "JavaScript": { "language_servers": ["vtsls", "..."], "format_on_save": "on", "formatter": "prettier", "tab_size": 2 },
+    "JSON": { "format_on_save": "on", "formatter": "prettier", "tab_size": 2 },
+    "HTML": { "format_on_save": "on", "formatter": "prettier", "tab_size": 2 },
+    "CSS": { "format_on_save": "on", "formatter": "prettier", "tab_size": 2 },
+    "Rust": { "format_on_save": "on", "formatter": "language_server", "tab_size": 4 }
+  },
+  "lsp": {
+    "clangd": {
+      "binary": { "path_lookup": true },
+      "initialization_options": { "fallbackFlags": ["-std=c++20", "-Wall"] }
+    },
+    "basedpyright": {
+      "settings": { "python": { "analysis": { "typeCheckingMode": "basic", "autoSearchPaths": true } } }
+    }
+  }
+}
