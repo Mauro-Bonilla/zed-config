@@ -16,7 +16,7 @@ cp zed-config/themes/*.json ~/.config/zed/themes/
 ## Highlights
 
 - Vim mode, VSCode base keymap, relative line numbers
-- Tokyo Night Yellow / "Resonance with Hatsune Miku" themes
+- Tokyo Night Yellow / Resonance themes
 - Font: JetBrainsMono Nerd Font, 65% window opacity
 - LSPs: clangd, basedpyright + ruff, gopls, vtsls
 - OpenRouter models (DeepSeek, GLM, Kimi) for the Agent panel
